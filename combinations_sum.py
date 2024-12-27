@@ -18,15 +18,17 @@
 def combinationSum(candidates, target):
     res = []
     def combinationSum(index,curr,currSum):
+        #base case
         if currSum>target:
             return
         if currSum ==target:
             res.append(curr[:])
             return
+        #recursion
         for j in range(index,len(candidates)):
             curr.append(candidates[j])   
             combinationSum(j,curr,currSum+candidates[j])
-            curr.pop()
+            curr.pop() #backtracking
     combinationSum(0,[],0)
     return res         
 
