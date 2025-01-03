@@ -15,7 +15,7 @@
 
 #USING MEMOIZATION APPROACH:
 
-def fibonacci(n,ht={0:0,1:1}):
+def fibonacci(n,ht={0:0,1:1}): #A hash set (dictionary) is used to store the values of the fibonacci series
     if n in ht:
         return ht[n]
     else:
