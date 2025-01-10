@@ -38,4 +38,4 @@ def findTargetSumWays(nums, target):
         return dp[index][sum_nums+summation]
     return helper(n-1,0) 
 
-print(findTargetSumWays([1,1,1,1],2)) #4
+print(findTargetSumWays([1,1,1,1],2))
