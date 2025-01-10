@@ -36,4 +36,4 @@ def canPartition(nums):
         prev = curr[:]  
     return curr[target]
 
-print(canPartition([1,5,20,14])) #True
+print(canPartition([1,5,20,14]))
