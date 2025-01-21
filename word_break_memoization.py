@@ -28,5 +28,5 @@ def wordBreak(s, wordDict):
         
         
     return check_ending_at(n-1)
-
+ 
 print(wordBreak("jackson",["jack","son"]))
