@@ -13,3 +13,20 @@ If we multiply the first two first, the number of multiplications needed are 48 
 
 If we multiply the last two first, the number of multiplications needed are 168+56=224
 """
+def matrixMultiplication(N, arr):
+    
+    def findCost(i,j):
+        #base case 
+        if i == j:
+            return 0
+        
+        #recursive case
+        cost=float('inf')
+        for k in range(i,j):
+            curr_cost = findCost(i,k) + findCost(k+1,j) + arr[i-1]*arr[k]*arr[j]
+            cost = min(cost,curr_cost)
+        return cost
+        
+    return findCost(1,N-1)
+    
+print(matrixMultiplication(4,[2, 4, 6, 7]))
