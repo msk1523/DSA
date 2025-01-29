@@ -12,7 +12,8 @@ Example:
 
 Input: points = [[3,9],[7,14],[10,16],[17,20]]
 Expected Output: The balloons can be burst by 2 arrows:
-Shoot an arrow at x = 10, bursting the balloons [3,9], [7,14], and [10,16].
+Shoot an arrow at x = 9, bursting the balloons [3,9], [7,14].
+Shoot an arrow at x = 16, bursting the balloons [10,16]
 Shoot an arrow at x = 18, bursting the balloon [17,20].
 """
 
