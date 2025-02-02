@@ -11,7 +11,7 @@ def leastInterval(tasks, n):
     number_max_freq = 0
     
     for task in tasks:
-        index = ord(task) - ors('A') #ord function in python returns the unicode code 
+        index = ord(task) - ord('A') #ord function in python returns the unicode code 
         count[index] +=1 
         if max_freq < count[index]:
             max_freq = count[index]
