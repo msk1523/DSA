@@ -4,11 +4,6 @@ Question
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.
 
-
-
-Try :
-
-After you have solved this question, think about whether you can solve it in constant space
 """
 
 def rotate_array(array,k):
