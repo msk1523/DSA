@@ -21,4 +21,4 @@ def two_sum(array,target):
             num_available[array[i]]=i
     return []
 
-print(two_sum([2,7,11,15],9))
+print(two_sum([2,7,11,15],4))
