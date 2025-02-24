@@ -3,7 +3,6 @@ Coding Exercise: Rotate Array
 Question
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.
-
 """
 
 def rotate_array(array,k):
