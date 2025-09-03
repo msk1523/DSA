@@ -1,5 +1,5 @@
 import java.util.*;
-public class LongestCommonSubsequence_dp {
+public class LongestIncreasingSubsequence_dp {
     public int Solution(int[] nums){
         int[] dp = new int[nums.length];
         Arrays.fill(dp,1);
@@ -17,6 +17,6 @@ public class LongestCommonSubsequence_dp {
 
     public static void main(String[] args) {
         int arr1[]={10,9,2,5,3,7,101,18};
-        System.out.println(new LongestCommonSubsequence_dp().Solution(arr1));
+        System.out.println(new LongestIncreasingSubsequence_dp().Solution(arr1));
     }
 }
